@@ -6,7 +6,6 @@ import { useState } from "react";
 const copyTextToClipboard = async (text: string) => {
   try {
     await navigator.clipboard.writeText(text);
-    console.log("Text copied to clipboard successfully");
   } catch (err) {
     console.error("Failed to copy text: ", err);
   }
