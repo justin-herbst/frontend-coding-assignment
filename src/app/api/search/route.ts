@@ -18,7 +18,7 @@ export function GET(req: NextApiRequest) {
   );
   const filteredData: Drink[] = drinkData
     .filter((drink: DetailedDrink): boolean => {
-      return drink.name.toLowerCase().includes(query as string);
+      return drink.name.toLowerCase().includes((query as string).toLowerCase());
     })
     .map((drink: DetailedDrink): Drink => {
       return {
