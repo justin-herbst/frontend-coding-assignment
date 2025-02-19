@@ -1,0 +1,21 @@
+.drinkCard {
+  border: var(--semi-transparent-border);
+  border-radius: var(--spacingSM);
+  width: 441px;
+  padding: var(--spacingM);
+  display: flex;
+  .image {
+    width: 137px;
+    height: 137px;
+    border-radius: var(--spacingS);
+  }
+  .content {
+    margin-left: 21px;
+  }
+  .drinkName {
+    font-size: var(--spacingML);
+    line-height: var(--spacingML);
+    font-weight: 400;
+    margin-bottom: var(--spacingSM);
+  }
+}

@@ -1,0 +1,7 @@
+.content {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: var(--spacingL);
+  flex-grow: 1;
+}

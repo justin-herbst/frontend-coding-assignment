@@ -8,18 +8,18 @@ The purpose of this exercise is to give us an example of your work within bounds
 
 We would like you to build a React app that consumes a public API. The public API consists of two endpoints:
 
-* A pageable endpoint that allows for searching
-* An endpoint that accepts an id, and provides details on a specific object
+- A pageable endpoint that allows for searching
+- An endpoint that accepts an id, and provides details on a specific object
 
 The React app should match as closely as possible the design found in this [Figma](https://www.figma.com/design/au6L5XqQ0VjanC9dlgdlmI/Dev-Homework?node-id=2532-2&m=dev&t=xoqFPCWRT0d9yNZp-1). If you want access to pixel perfect measurements, you'll need to log into Figma with an account you create or already have.
 
 ### Requirements
 
-* Clone this repo as a starting point for the assignment. It was created using [Create React App](https://create-react-app.dev/) and has been configured with [Typescript](https://www.typescriptlang.org/) and [TailwindCSS](https://tailwindcss.com/).
-* You can build this with any node modules or services you see fit.
-* We have included the [Jest](https://jestjs.io/) test framework for your convenience and expect to see tests that exercise the behavior of the code you write.
-* We have included the assets for the Figma design in the `src/assets` folder.
-* To run the public API locally, follow the instructions in this [repository](https://github.com/zeemee/zeemee-public-api).
+- Clone this repo as a starting point for the assignment. It was created using [Create React App](https://create-react-app.dev/) and has been configured with [Typescript](https://www.typescriptlang.org/) and [TailwindCSS](https://tailwindcss.com/).
+- You can build this with any node modules or services you see fit.
+- We have included the [Jest](https://jestjs.io/) test framework for your convenience and expect to see tests that exercise the behavior of the code you write.
+- We have included the assets for the Figma design in the `src/assets` folder.
+- To run the public API locally, follow the instructions in this [repository](https://github.com/zeemee/zeemee-public-api).
 
 ### Public API Specification
 
@@ -98,4 +98,10 @@ We're flexible in how you submit your work. If you want to .zip it up and email 
 
 This is just an exercise. While the methods and approaches you take to problems should be indicative of how you would approach a problem in a production environment, we don't expect any over-the-top work here. Don't spend tons of time on it. If you think something really needs a complex solution that would take a lot of work, implement a lesser solution, write a note in comments about a proper solution, and we can discuss it.
 
+# Running the App Locally
 
+```
+$ npm run dev
+```
+
+Everything is included in this repo including the API endpoints.

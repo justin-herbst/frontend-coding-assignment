@@ -1,0 +1,19 @@
+{
+  "Search": {
+    "barcraft": "BarCraft",
+    "search-all-drinks": "Search all drinks",
+    "go": "Go",
+    "searching": "Searching...",
+    "all-drinks": "All drinks",
+    "loading": "Loading...",
+    "no-results": "No results found",
+    "search-results": "{count, plural, \n =0 {No results} \n  =1 {1 result} \n other {{count} results} \n}",
+    "ingredients": "{count, plural, \n =0 {No Ingredients} \n  =1 {1 Ingredient} \n other {{count} Ingredients} \n}",
+    "search-query": "Search: {query}",
+    "instructions": "Instructions",
+    "glass-needed": "Glass needed",
+    "share-link": "Share Link",
+    "copy": "Copy",
+    "copied": "Copied"
+  }
+}

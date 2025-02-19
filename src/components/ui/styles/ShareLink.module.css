@@ -1,0 +1,43 @@
+.shareLinkContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.shareLinkInput {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: var(--white);
+  border: none;
+  height: 44px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #000000;
+  padding-left: var(--spacingM);
+  padding-right: var(--spacingM);
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.shareLinkButton {
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 44px;
+  padding-left: var(--spacingM);
+  padding-right: var(--spacingM);
+  cursor: pointer;
+  font-size: 20px;
+}
+.checkIcon,
+.copyIcon {
+  height: 24px;
+  margin-right: var(--spacingS);
+}
