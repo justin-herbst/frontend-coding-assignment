@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { Drink } from "../types";
 
-type Props = {
+export type SearchDrinkProps = {
   query?: string;
   page?: number;
   limit?: number;
@@ -12,7 +12,7 @@ export type SearchDrinkResults = {
   drinks: Drink[];
   total: number;
   loading: boolean;
-  error: boolean;
+  error: string;
 };
 
 type ResponseData = {
@@ -36,7 +36,11 @@ const search = async ({
   return data;
 };
 
-const useSearchDrinks = ({ query = "", page = 1, limit = 6 }: Props) => {
+const useSearchDrinks = ({
+  query = "",
+  page = 1,
+  limit = 6,
+}: SearchDrinkProps) => {
   const [responseData, setResponseData] = useState<ResponseData>({
     total: 0,
     drinks: [],

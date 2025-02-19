@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { DetailedDrink } from "../types";
 
-type Props = {
+export type DrinkDetailsProps = {
   id: number;
 };
 
@@ -12,13 +12,13 @@ export type DrinkDetailsResults = {
   error: string;
 };
 
-const getDrinkDetails = async ({ id }: Props) => {
+const getDrinkDetails = async ({ id }: DrinkDetailsProps) => {
   const response = await fetch(`http://localhost:3000/api/details?id=${id}`);
   const data = await response.json();
   return data;
 };
 
-const useDrinkDetails = ({ id }: Props) => {
+const useDrinkDetails = ({ id }: DrinkDetailsProps) => {
   const [drinkDetails, setDrinkDetails] = useState<DetailedDrink | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
