@@ -13,11 +13,14 @@ type Props = {
 };
 const DrinkDetails = ({ drink, loading, error }: Props) => {
   const t = useTranslations("Search");
-  if (loading || !drink) {
+  if (loading) {
     return <Loading />;
   }
   if (error) {
     return <div>{error}</div>;
+  }
+  if (!drink) {
+    return null;
   }
   const iLength = drink.ingredients.length;
   const iMid = Math.ceil(iLength / 2);
