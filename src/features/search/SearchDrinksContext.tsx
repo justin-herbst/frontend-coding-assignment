@@ -81,3 +81,37 @@ export const SearchDrinksContextProvider = ({
     </SearchDrinksContext.Provider>
   );
 };
+
+type MockSearchDrinksProviderProps = SearchDrinksProviderProps & {
+  error?: string;
+  loading?: boolean;
+};
+
+export const MockSearchDrinksContextProvider = ({
+  query = "",
+  limit = 6,
+  page = 1,
+  drinks = [],
+  total = 0,
+  loading = false,
+  error = "",
+  children,
+}: MockSearchDrinksProviderProps) => {
+  const data: SearchDrinksContextType = {
+    query,
+    limit,
+    page,
+    loading,
+    error,
+    drinks,
+    total,
+    setQuery: jest.fn(),
+    setPage: jest.fn(),
+    setLimit: jest.fn(),
+  };
+  return (
+    <SearchDrinksContext.Provider value={data}>
+      {children}
+    </SearchDrinksContext.Provider>
+  );
+};
