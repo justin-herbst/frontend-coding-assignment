@@ -1,0 +1,9 @@
+.pageHeader {
+  font-family: "SF Pro Rounded";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: var(--spacingML);
+  letter-spacing: 0%;
+  margin-top: var(--spacingML);
+  margin-bottom: var(--spacingML);
+}

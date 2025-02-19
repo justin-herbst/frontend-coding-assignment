@@ -1,0 +1,23 @@
+.buttonContainer {
+  display: flex;
+  gap: var(--spacingSM);
+  justify-content: flex-start;
+}
+.button {
+  height: var(--spacingL);
+  width: var(--spacingL);
+  border: var(--semi-transparent-border);
+  border-radius: var(--spacingSM);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  background-color: rgba(241, 241, 241, 0.2);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.icon {
+  height: var(--spacingM);
+  width: var(--spacingM);
+}

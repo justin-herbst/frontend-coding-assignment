@@ -1,0 +1,72 @@
+.drinkDetailsContainer {
+  width: 628px;
+  margin: 0 auto;
+}
+.drinkCard {
+  border: var(--semi-transparent-border);
+  border-radius: var(--spacingSM);
+  width: 628px;
+  padding: var(--spacingM);
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--spacingL);
+  }
+  .subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: var(--spacingSM);
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .imageContainer {
+    width: 220px;
+  }
+  .image {
+    width: 220px;
+    height: 220px;
+    border-radius: var(--spacingS);
+    margin-bottom: var(--spacingSM);
+  }
+  .ingredientContainer {
+    flex-grow: 1;
+    margin-left: 60px;
+
+    .subtitle {
+      margin-bottom: var(--spacingML);
+    }
+  }
+  .ingredients {
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+  }
+  .column {
+    width: 50%;
+    float: left;
+  }
+  .text,
+  .ingredient {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: var(--spacingSM);
+  }
+  .ingredient {
+    clear: none;
+    width: 96%;
+  }
+  .drinkName {
+    font-size: var(--spacingML);
+    line-height: var(--spacingML);
+    font-weight: 400;
+    margin-bottom: var(--spacingSM);
+  }
+  .bottom {
+    margin-top: var(--spacingM);
+  }
+  .shareSection {
+    margin-top: var(--spacingML);
+  }
+}

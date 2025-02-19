@@ -1,0 +1,20 @@
+.loadingContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: var(--spacingSM);
+}
+.text {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
